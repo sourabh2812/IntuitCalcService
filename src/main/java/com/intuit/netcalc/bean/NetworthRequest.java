@@ -1,11 +1,6 @@
 package com.intuit.netcalc.bean;
 
 import java.io.Serializable;
-import java.util.List;
-
-import com.intuit.netcalc.dto.AssetDTO;
-import com.intuit.netcalc.dto.CurrencyDTO;
-import com.intuit.netcalc.dto.LiabilityDTO;
 
 public class NetworthRequest implements Serializable {
 
@@ -14,89 +9,72 @@ public class NetworthRequest implements Serializable {
 	 */
 	private static final long serialVersionUID = 3831712171270836022L;
 
-	private List<AssetDTO> assetList;
+	private Long id;
 
-	private List<LiabilityDTO> liabilityList;
+	private String categoryType;
 
-	private List<CurrencyDTO> currencyList;
+	private Double value;
 
-	private double netWorth;
-
-	private String selectedCurrency;
+	private String currencyCode;
 
 	/**
-	 * @return the assetList
+	 * @return the id
 	 */
-	public List<AssetDTO> getAssetList() {
-		return assetList;
+	public Long getId() {
+		return id;
 	}
 
 	/**
-	 * @param assetList
-	 *            the assetList to set
+	 * @param id
+	 *            the id to set
 	 */
-	public void setAssetList(List<AssetDTO> assetList) {
-		this.assetList = assetList;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	/**
-	 * @return the liabilityList
+	 * @return the categoryType
 	 */
-	public List<LiabilityDTO> getLiabilityList() {
-		return liabilityList;
+	public String getCategoryType() {
+		return categoryType;
 	}
 
 	/**
-	 * @param liabilityList
-	 *            the liabilityList to set
+	 * @param categoryType
+	 *            the categoryType to set
 	 */
-	public void setLiabilityList(List<LiabilityDTO> liabilityList) {
-		this.liabilityList = liabilityList;
+	public void setCategoryType(String categoryType) {
+		this.categoryType = categoryType;
 	}
 
 	/**
-	 * @return the currencyList
+	 * @return the value
 	 */
-	public List<CurrencyDTO> getCurrencyList() {
-		return currencyList;
+	public Double getValue() {
+		return value;
 	}
 
 	/**
-	 * @param currencyList
-	 *            the currencyList to set
+	 * @param value
+	 *            the value to set
 	 */
-	public void setCurrencyList(List<CurrencyDTO> currencyList) {
-		this.currencyList = currencyList;
+	public void setValue(Double value) {
+		this.value = value;
 	}
 
 	/**
-	 * @return the netWorth
+	 * @return the currencyCode
 	 */
-	public double getNetWorth() {
-		return netWorth;
+	public String getCurrencyCode() {
+		return currencyCode;
 	}
 
 	/**
-	 * @param netWorth
-	 *            the netWorth to set
+	 * @param currencyCode
+	 *            the currencyCode to set
 	 */
-	public void setNetWorth(double netWorth) {
-		this.netWorth = netWorth;
-	}
-
-	/**
-	 * @return the selectedCurrency
-	 */
-	public String getSelectedCurrency() {
-		return selectedCurrency;
-	}
-
-	/**
-	 * @param selectedCurrency
-	 *            the selectedCurrency to set
-	 */
-	public void setSelectedCurrency(String selectedCurrency) {
-		this.selectedCurrency = selectedCurrency;
+	public void setCurrencyCode(String currencyCode) {
+		this.currencyCode = currencyCode;
 	}
 
 }

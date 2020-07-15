@@ -39,8 +39,7 @@ public class LiabilityDTO implements Serializable {
 	}
 
 	/**
-	 * @param id
-	 *            the id to set
+	 * @param id the id to set
 	 */
 	public void setId(Long id) {
 		this.id = id;
@@ -54,8 +53,7 @@ public class LiabilityDTO implements Serializable {
 	}
 
 	/**
-	 * @param liabilityName
-	 *            the liabilityName to set
+	 * @param liabilityName the liabilityName to set
 	 */
 	public void setLiabilityName(String liabilityName) {
 		this.liabilityName = liabilityName;
@@ -69,8 +67,7 @@ public class LiabilityDTO implements Serializable {
 	}
 
 	/**
-	 * @param liabilityValue
-	 *            the liabilityValue to set
+	 * @param liabilityValue the liabilityValue to set
 	 */
 	public void setLiabilityValue(double liabilityValue) {
 		this.liabilityValue = liabilityValue;
@@ -84,8 +81,7 @@ public class LiabilityDTO implements Serializable {
 	}
 
 	/**
-	 * @param liabilityGrpId
-	 *            the liabilityGrpId to set
+	 * @param liabilityGrpId the liabilityGrpId to set
 	 */
 	public void setLiabilityGrpId(int liabilityGrpId) {
 		this.liabilityGrpId = liabilityGrpId;

@@ -26,9 +26,9 @@ INSERT INTO asset_group (asset_group_id, asset_group_name) VALUES (2, 'Long Term
 INSERT INTO liability_group (liability_group_id, liability_group_name) VALUES (1, 'Short Term Liabilties');
 INSERT INTO liability_group (liability_group_id, liability_group_name) VALUES (2, 'Long Term Debt');
 
-INSERT INTO currency (currency_code, currency_value, selected_currency)
-VALUES ('CAD', 1.36, false);
-INSERT INTO currency (currency_code, currency_value, selected_currency)
-VALUES ('USD', 1, true);
-INSERT INTO currency (currency_code, currency_value, selected_currency)
-VALUES ('INR', 76, false);
+INSERT INTO currency (currency_code, currency_value)
+VALUES ('USD', 1);
+INSERT INTO currency (currency_code, currency_value)
+VALUES ('CAD', 1.36);
+INSERT INTO currency (currency_code, currency_value)
+VALUES ('INR', 76);

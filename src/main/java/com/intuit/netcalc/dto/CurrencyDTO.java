@@ -21,9 +21,6 @@ public class CurrencyDTO {
 	@Column(name = "currency_value")
 	private double currencyValue;
 
-	@Column(name = "selected_currency")
-	private boolean isSelected;
-
 	/**
 	 * @return the id
 	 */
@@ -32,8 +29,7 @@ public class CurrencyDTO {
 	}
 
 	/**
-	 * @param id
-	 *            the id to set
+	 * @param id the id to set
 	 */
 	public void setId(Long id) {
 		this.id = id;
@@ -47,8 +43,7 @@ public class CurrencyDTO {
 	}
 
 	/**
-	 * @param currencyCode
-	 *            the currencyCode to set
+	 * @param currencyCode the currencyCode to set
 	 */
 	public void setCurrencyCode(String currencyCode) {
 		this.currencyCode = currencyCode;
@@ -62,25 +57,9 @@ public class CurrencyDTO {
 	}
 
 	/**
-	 * @param currencyValue
-	 *            the currencyValue to set
+	 * @param currencyValue the currencyValue to set
 	 */
 	public void setCurrencyValue(double currencyValue) {
 		this.currencyValue = currencyValue;
-	}
-
-	/**
-	 * @return the isSelected
-	 */
-	public boolean isSelected() {
-		return isSelected;
-	}
-
-	/**
-	 * @param isSelected
-	 *            the isSelected to set
-	 */
-	public void setSelected(boolean isSelected) {
-		this.isSelected = isSelected;
 	}
 }
